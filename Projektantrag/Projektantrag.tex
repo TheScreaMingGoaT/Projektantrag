@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{float}
+\usepackage[ngerman]{babel}
+\usepackage{fancyhdr}
+\usepackage[a4paper, left=2.5cm, right=2cm, bottom=2cm, headheight=2cm]{geometry}
+\usepackage{lipsum}
+\usepackage{tocloft}
+
+\setlength{\cftsecindent}{0em}
+\setlength{\cftsubsecindent}{0em}
+\setlength{\cftsubsubsecindent}{0em}
+\setlength{\cftsecnumwidth}{4em}
+\setlength{\cftsubsecnumwidth}{4em}
+\setlength{\cftsubsubsecnumwidth}{4em}
+
+
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{{\rightmark }} 
+\fancyfoot[R]{\thepage}
+\rhead{\includegraphics[scale=0.3]{Logo}}
+
+\usepackage{graphicx}
+\graphicspath{ {./Img/} }
+
+\setcounter{secnumdepth}{4}
+
+
+\setlength{\parindent}{0em}
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{Infrastructure as Code}
+        
+        \Large
+        \vspace{0.5cm}
+        Die Rolle von Ansible für die Automatisierung und Dokumentation von 
+        IT-Infrastrukturen
+             
+        \vspace{1.5cm}
+ 
+        \textbf{Paul Herrmann}
+ 
+        \vfill
+                 
+        \vspace{0.8cm}
+      
+        \includegraphics[width=1\textwidth]{Logo_Schule}
+             
+        reddo IT-SERVICE\\
+        BSZ ET Dresden\\
+        \today
+             
+    \end{center}
+ \end{titlepage}
+
+\thispagestyle{empty}
+%\pagebreak
+%\tableofcontents
+%\thispagestyle{empty}
+%\pagebreak
+\setcounter{page}{1}
+
+\section{Thema der Projektarbeit}
+Das automatisierte Einrichten eines Webservers mithilfe von Ansible.
+
+\section{Geplanter Bearbeitungszeitraum}
+Beginn: 16.03.2024\\
+Ende: 28.04.2024\\
+
+\section{Projektbeschreibung}
+Mein Projekt zum automatisierten Einrichten eines Webservers soll die 
+Möglichkeiten der modernen Administrationstools
+und Philosophien aufzeigen und gleichzeitig einen Vergleich zu klasischen Methodiken ziehen.\\
+
+Meine Projektarbeit wird sich dabei auf die Philosophie des ''Infrastructure as Code'' st\"utzen und versucht
+aufzuzeigen welche Vorteile diese birgt. Spezifischer soll der CI/CD Zyklus erklärt
+und an einem simplen Beispiel aufgezeigt werden.\\
+
+Ziel des praktischen Versuchs ist es, auf einer bestehenden, unkonfigurierten, virtuellen Linux-Maschine einen LEMP-Stack
+zu installieren, der eine simple HTML-Seite darstellt. Ebenfalls sollte dieser nach einem Neustart die Webdienste
+automatisch starten. Diese Einrichtung soll komplett über das Python basierte Automationstool Ansible stattfinden. 
+
+\section{Projektumfeld}
+Das Projekt findet im Umfeld der reddo IT-Service GmbH statt.
+
+\section{Projektplan/Projektplan (einschließlich Zeitplanung)}
+
+Konzeptionierung: 3h\\
+- Ist-Analyse (1h)\\
+- Soll-Betrachtung (1h)\\
+- Lösungsfindung (1h)\\
+
+Aufbauen der Testumgebung: 7h\\
+- Einrichten des Hypervisors (3h)\\
+- Erstellen des Webservers (1h)\\
+- Erstellen und Einrichten des Automationsservers (3h)\\
+
+Umsetzung: 15h\\
+- Konfigurieren der Ansible Playbooks (10h)\\
+- Pushen der Konfiguration (3h)\\
+- Test des eingerichteten Servers (2h)\\
+
+Dokumentation: 15h\\
+- Schreiben der Projektarbeitsdokumentation (15h)\\
+
+\section{Dokumentation zur Projektarbeit}
+Ausarbeitung der Projektdokumentation in den beschriebenen Projektphasen, inkl.
+
+- VM Konfigurationen\\
+- Ansible Playbooks\\
+- Dokumentationen zu den verwendeten Tools\\
+
+\section{Themenbetreuer}
+Name, Vorname: Osmalek, Hagen | Mail: hagen@reddo.de
+
+\end{document}
